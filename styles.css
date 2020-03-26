@@ -1,0 +1,19 @@
+.wrapper, .articles, .article-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-usa, .summary-la, .article {
+    display: flex;
+    flex-direction: row;
+}
+
+.thumb {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper {
+  width: 80%;
+  align-items: center;
+}
