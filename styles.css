@@ -1,19 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color:#000; 
+}
+
+h4 {
+    font-weight: 800;
+}
+
 .wrapper, .articles, .article-content{
     display: flex;
     flex-direction: column;
+}
+
+.articles {
+    margin-bottom: 15px;
 }
 
 .summary-usa, .summary-la, .article {
     display: flex;
     flex-direction: row;
 }
+.summary-usa, .summary-la {
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.summary-cards {
+    border-radius: 10px;
+    box-shadow: 5px 6px 16px 5px rgba(227,220,227,0.82);
+    margin: 15px 0;
+}
 
 .thumb {
+    border-radius: 10px;
     width: 100px;
     height: 100px;
 }
 
 .wrapper {
-  width: 80%;
-  align-items: center;
+    padding: 50px;
+    /* align-items: center; */
+    /* border: 1px solid black */
+}
+
+
+.article-title {
+    margin-bottom: 10px;
+}
+.usa-deaths, .usa-confirmed, .la-deaths, .la-confirmed {
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 5px 6px 16px 5px rgba(227,220,227,0.82);
+}
+
+p {
+    font-weight: 400;
+}
+
+.image-la, .image-usa{
+    height: 70px;
+    border-radius: 5px;
+}
+
+.image-la {
+    width: 84px;
+}
+
+.article {
+    justify-content: center;
+    margin-top: 10px;
+    /* border: 1px solid; */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 16px 5px rgba(227,220,227,0.82);
+}
+
+.article-content{
+    margin-left: 15px;
+}
+.article-image {
+    align-self: center;
+
+}
+
+.description {
+    width: 600px;
+}
+
+.centered-text {
+    align-self: center;
 }

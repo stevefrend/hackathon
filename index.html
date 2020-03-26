@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="./jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <div class="wrapper">
+    <h2 class="centered-text">SUMMARY</h2>
     <div class="summary-cards">
+      
       <div class="summary-usa">
-        <img src="" alt="">
-        <div class="usa-deaths">Total deaths</div>
-        <div class="usa-confirmed">Total confirmed</div>
+        <img class='image-usa' src="https://cdn4.vectorstock.com/i/1000x1000/51/43/usa-flag-vector-1495143.jpg" alt="image not available">
+        <div class="usa-deaths">DEATHS</div>
+        <div class="usa-confirmed">CONFIRMED CASES</div>
       </div>
       
       <div class="summary-la">
-        <img src="" alt="">
-        <div class="la-deaths">Total deaths</div>
-        <div class="la-confirmed">Total confirmed</div>
+        <img class='image-la'src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg" alt="image not available">
+        <div class="la-deaths">DEATHS</div>
+        <div class="la-confirmed">CONFIRMED CASES</div>
       </div>
     </div>
+    <h2 class="centered-text">RECENT NEWS ARTICLES</h2>
     <div class="articles">
     
     </div>
-    <a href="www.newsapi.org">Powered by News API</a>
+
+    <a class="centered-text" href="www.newsapi.org">Powered by News API</a>
   </div>
   <script src="main.js"></script>
 </body>

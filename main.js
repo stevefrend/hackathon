@@ -1,5 +1,3 @@
-
-
 const getApiData = () => {
   $.getJSON('https://api.apify.com/v2/key-value-stores/moxA3Q0aZh5LosewB/records/LATEST?disableRedirect=true', (usaData)=>{
     generateUSA(usaData.totalDeaths, usaData.totalCases)
@@ -48,15 +46,17 @@ const generateArticles = (data) => {
   for(let i = 0; i < 5; i++){
     let article = data['articles'][i]
     $('.articles').append(`
+    <a href="${article.url}" target="_blank">
       <div class="article">
         <div class="article-image">
-          <img class="thumb" src="${article.urlToImage}"></img>
+            <img class="thumb" src="${article.urlToImage}"></img>
         </div>
         <div class="article-content">
-          <h4>${article.title}</h4>
-          <p>${article.description}</p>
+          <h4 class="article-title">${article.title}</h4>
+          <p class="description">${article.description}</p>
         </div>
       </div>  
+    </a>
     `)  
   }
 }
